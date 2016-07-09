@@ -1,0 +1,120 @@
+HW1 Results
+Name: Yuanyuan Peng
+SBUID: 108734720
+Recitation 1
+
+All requested files (1 pt)                                            Score: 1 / 1	All Necessary files found
+Makefile contains all targets (1 pt)                                  Score: 1 / 1	Makefile Complete
+=-=-=-=-=-=-=-=TESTING HW1.C SOURCE FILE=-=-=-=-=-=-=-=
+Makefile compiles with flags -Wall -Werror (4pts)                     Score: 4 / 4	Makefile compiles with flags
+Testing Valid Cases
+(These should all return a value)
+
+Normal  -- Each case is worth 2.0 points
+./a.out LE SM db 38 ec 7d                                              -- GOOD: Value outputted matches test case
+000000007dec38db
+./a.out LE 1 db 38 ec 7d                                               -- GOOD: Value outputted matches test case
+000000007dec38db
+./a.out BE SM db 38 ec 7d                                              -- GOOD: Value outputted matches test case
+db38ec7d00000000
+./a.out BE 1 db 38 ec 7d                                               -- GOOD: Value outputted matches test case
+db38ec7d00000000
+./a.out LE SM db 38 ec 7d                                              -- GOOD: Value outputted matches test case
+000000007dec38db
+./a.out LE 1 db 38 ec 7d                                               -- GOOD: Value outputted matches test case
+000000007dec38db
+./a.out BE SM db 38 ec 7d                                              -- GOOD: Value outputted matches test case
+db38ec7d00000000
+./a.out BE 1 db 38 ec 7d                                               -- GOOD: Value outputted matches test case
+db38ec7d00000000
+Case results: 16.0 / 16.0
+
+64 Bit Positive  -- Each case is worth 2.0 points
+./a.out LE SM 1b 69 fe eb 1d f4 7a 35                                  -- GOOD: Value outputted matches test case
+357af41debfe691b
+./a.out LE 1 1b 69 fe eb 1d f4 7a 35                                   -- GOOD: Value outputted matches test case
+357af41debfe691b
+./a.out BE SM 1b 69 fe eb 1d f4 7a 35                                  -- GOOD: Value outputted matches test case
+1b69feeb1df47a35
+./a.out BE 1 1b 69 fe eb 1d f4 7a 35                                   -- GOOD: Value outputted matches test case
+1b69feeb1df47a35
+./a.out LE SM 1b 69 fe eb 1d f4 7a 35                                  -- GOOD: Value outputted matches test case
+357af41debfe691b
+./a.out LE 1 1b 69 fe eb 1d f4 7a 35                                   -- GOOD: Value outputted matches test case
+357af41debfe691b
+./a.out BE SM 1b 69 fe eb 1d f4 7a 35                                  -- GOOD: Value outputted matches test case
+1b69feeb1df47a35
+./a.out BE 1 1b 69 fe eb 1d f4 7a 35                                   -- GOOD: Value outputted matches test case
+1b69feeb1df47a35
+Case results: 16.0 / 16.0
+
+1 Digit Numerical  -- Each case is worth 0.5 points
+./a.out LE SM 5b 3 ec 7d                                               -- GOOD: Value outputted matches test case
+000000007dec035b
+./a.out LE 1 5b 3 ec 7d                                                -- GOOD: Value outputted matches test case
+000000007dec035b
+./a.out BE SM 5b 3 ec 7d                                               -- GOOD: Value outputted matches test case
+5b03ec7d00000000
+./a.out BE 1 5b 3 ec 7d                                                -- GOOD: Value outputted matches test case
+5b03ec7d00000000
+Case results: 2.0 / 2.0
+Success test results: 34.0 / 34.0
+
+
+Testing Invalid Cases
+(There should be no output)
+./a.out                                                               GOOD: Program exited with status "1"
+./a.out                                                               GOOD: Program exited with status "1"
+./a.out                                                               GOOD: Program exited with status "1"
+./a.out                                                               GOOD: Program exited with status "1"
+./a.out LE SM                                                         GOOD: Program exited with status "1"
+./a.out LE 1                                                          GOOD: Program exited with status "1"
+./a.out BE SM                                                         GOOD: Program exited with status "1"
+./a.out BE 1                                                          GOOD: Program exited with status "1"
+./a.out CE SM db 3 ec 7d                                              GOOD: Program exited with status "1"
+./a.out LF SM db 3 ec 7d                                              GOOD: Program exited with status "1"
+./a.out BE SG db 3 ec 7d                                              GOOD: Program exited with status "1"
+./a.out BE 2 db 3 ec 7d                                               GOOD: Program exited with status "1"
+./a.out LE SM 1b 69 fe eb 1d f4 7a 35 db                              GOOD: Program exited with status "1"
+./a.out LE 1 1b 69 fe eb 1d f4 7a 35 db                               GOOD: Program exited with status "1"
+./a.out BE SM 1b 69 fe eb 1d f4 7a 35 db                              GOOD: Program exited with status "1"
+./a.out BE 1 1b 69 fe eb 1d f4 7a 35 db                               GOOD: Program exited with status "1"
+./a.out LE SM db 3 ex 7d                                              GOOD: Program exited with status "1"
+./a.out LE 1 db 3 ex 7d                                               GOOD: Program exited with status "1"
+./a.out BE SM db 3 ex 7d                                              GOOD: Program exited with status "1"
+./a.out BE 1 db 3 ex 7d                                               GOOD: Program exited with status "1"
+Invalid test case results: 10.0 / 10.0
+Total results: 50.0 / 50
+
+-------------------------------------------------------------
+
+=============================================================
+
+-------------------------------------------------------------
+                        SPARKY TESTING                        
+-------------------------------------------------------------
+=-=-=-=-=-=-=-=TESTING HW1.C SOURCE FILE=-=-=-=-=-=-=-=
+Makefile compiles with flags -Wall -Werror (4pts)                     Score: 4 / 4	Makefile compiles with flags
+Testing Valid Cases
+(These should all return a value)
+
+Normal  -- Each case is worth 2.0 points
+./a.out LE SM db 38 ec 7d                                              -- GOOD: Value outputted matches test case
+000000007dec38db
+./a.out LE 1 db 38 ec 7d                                               -- GOOD: Value outputted matches test case
+000000007dec38db
+./a.out BE SM db 38 ec 7d                                              -- GOOD: Value outputted matches test case
+db38ec7d00000000
+./a.out BE 1 db 38 ec 7d                                               -- GOOD: Value outputted matches test case
+db38ec7d00000000
+./a.out LE SM db 38 ec 7d                                              -- GOOD: Value outputted matches test case
+000000007dec38db
+./a.out LE 1 db 38 ec 7d                                               -- GOOD: Value outputted matches test case
+000000007dec38db
+./a.out BE SM db 38 ec 7d                                              -- GOOD: Value outputted matches test case
+db38ec7d00000000
+./a.out BE 1 db 38 ec 7d                                               -- GOOD: Value outputted matches test case
+db38ec7d00000000
+Case results: 16.0 / 16.0
+Success test results: 16.0 / 16.0
+Total results: 20.0 / 20
